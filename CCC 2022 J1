@@ -1,0 +1,5 @@
+R= int(input ().strip ())
+S= int(input().strip())
+Cupcakes= (R*8 + S*3)
+Remaining_cupcakes= Cupcakes-28
+print (Remaining_cupcakes)
