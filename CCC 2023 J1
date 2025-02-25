@@ -1,0 +1,7 @@
+P= int(input())
+C= int(input())
+score= (50*P - 10*C)
+if P>C:
+    print (score + 500)
+else:
+    print (score)
