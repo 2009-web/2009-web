@@ -1,0 +1,12 @@
+n = int(input())
+scores = []
+for _ in range(n):
+    scores.append(int(input()))
+scores.sort(reverse=True)
+unique_scores = []
+for score in scores:
+    if score not in unique_scores:
+        unique_scores.append(score)
+bronze_score = unique_scores[2]
+bronze_count = scores.count(bronze_score)
+print(bronze_score, bronze_count)
