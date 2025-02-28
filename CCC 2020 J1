@@ -1,0 +1,8 @@
+S= int(input().strip ())
+M= int(input().strip ())
+L= int (input().strip ())
+condition= (S*1+ M*2+ L*3)
+if condition >=10:
+    print("happy")
+else:
+    print ("sad")
