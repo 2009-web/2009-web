@@ -1,0 +1,16 @@
+n = int(input())
+gold_team = True
+above_zero = 0
+for _ in range(n):
+    points = int(input())
+    fouls = int(input())
+    stars = points * 5 - fouls * 3
+    
+    if stars > 40:
+        above_zero += 1
+    else:
+        gold_team = False
+if gold_team:
+    print(str(above_zero) + "+")
+else:
+    print(above_zero)
