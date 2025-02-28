@@ -1,0 +1,21 @@
+instructions = []
+while True:
+    line = input().strip()
+    if line == "99999":
+        break
+    instructions.append(line)
+
+previous_direction = None
+
+for instruction in instructions:
+    first_two_digits = int(instruction[:2])
+    steps = int(instruction[2:])
+
+    if first_two_digits == 0:
+        direction = previous_direction  # Same as the previous instruction
+    elif first_two_digits % 2 == 0:
+        direction = "left"  # Swapped to left
+    else:
+        direction = "right"  # Swapped to right
+    previous_direction = direction
+    print("{} {}".format(direction, steps))
