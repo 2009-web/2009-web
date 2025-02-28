@@ -1,0 +1,9 @@
+D = int(input())
+while True:
+    yobi_size = int(input())
+    if yobi_size < D:
+        D += yobi_size
+    else:
+        break
+print(D)
+
