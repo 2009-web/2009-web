@@ -1,0 +1,13 @@
+n = int(input())
+availability = [input() for _ in range(n)]
+day_counts = [0] * 5
+for person in availability:
+    for i in range(5):
+        if person[i] == 'Y':
+            day_counts[i] += 1
+max_attendance = max(day_counts)
+best_days = []
+for i in range(5):
+    if day_counts[i] == max_attendance:
+        best_days.append(str(i + 1))  
+print(",".join(best_days))
