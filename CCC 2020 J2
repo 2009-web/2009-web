@@ -1,0 +1,10 @@
+p = int(input())
+d = int(input())
+r = int(input())
+total = d
+day = 0
+while total <= p:
+    day += 1
+    d *= r
+    total += d
+print(day)
