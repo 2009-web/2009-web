@@ -1,9 +1,14 @@
-D = int(input())
-while True:
-    yobi_size = int(input())
-    if yobi_size < D:
-        D += yobi_size
-    else:
-        break
-print(D)
-
+Chillis= {
+    "Poblano":	1500,
+    "Mirasol":	6000,
+    "Serrano":	15500,
+    "Cayenne":	40000,
+    "Thai":	75000,
+    "Habanero":	125000,
+    }
+N= int(input().strip())
+SHC= 0
+for _ in range (N):
+    selected_chillis=(input().strip())
+    SHC += Chillis [selected_chillis]
+print(SHC)
