@@ -1,0 +1,15 @@
+import re
+
+input_string = input().strip()
+pattern = r'([A-Z]+)([+-])(\d+)'
+matches = re.findall(pattern, input_string)
+
+for match in matches:
+    letters = match[0]
+    sign = match[1]
+    turns = int(match[2])
+    if sign == '+':
+        action = "tighten"
+    else:
+        action = "loosen"
+    print("{} {} {}".format(letters, action, turns))
